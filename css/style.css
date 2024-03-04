@@ -1,0 +1,114 @@
+/* 
+　作成日：12/4
+  作成者：五右衛門
+　名称：模写コーティング1-5 
+*/
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+    align-items: bottom;
+}
+body{
+    color: #2b2a27;
+    background-color: #eee;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+a{
+    color: #2b2a27;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    margin-bottom: 60px;
+}
+.flex .mainvisual{
+    width: 50%;
+}
+.flex .mainvisual img{
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+}
+.flex .recipe{
+    width: 50%;
+    padding: 40px 5% 0 5%;
+    box-sizing: border-box;
+}
+.flex .recipe .site-title{
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+.flex .recipe .section-title{
+    border-bottom: solid 1px #ccc;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    margin: 40px 0 15px 0;
+}
+.flex .recipe dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex .recipe dl dt{
+    width: 85%;
+    border-bottom: #ccc 1px dotted;
+    padding: 6px 0;
+}
+.flex .recipe dl dd{
+    width: 15%;
+    border-bottom:#ccc 1px dotted;
+    padding: 6px 0;
+    text-align: right;
+}
+.flex .recipe ol li{
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    margin-left: 20px;
+}
+.btn{
+    text-align: center;
+    margin-bottom: 80px;
+}/*  
+.btn a{
+    display: inline-block;
+    border: solid 1px #2b2a27;
+    font-size: 0.875rem;
+    padding: 18px 60px;
+    text-decoration: none;
+}
+*/
+
+/* -footer- */
+#footer{
+    font-size: 0.75rem;
+    padding: 20px;
+    text-align: center;
+}
+#footer .sns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#footer .sns li{
+    list-style: none;
+    margin: 0 10px;
+}
+/* -responsive-  */
+@media screen and (max-width: 834px) {
+    .flex{
+        flex-direction:column;
+    }
+    .flex .mainvisual{
+        width: 100%;
+    }
+    .flex .mainvisual img{
+        height: auto;
+    }
+    .flex .recipy{
+        width: 100%;
+    }
+}
