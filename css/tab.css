@@ -38,3 +38,8 @@
 		opacity: 1;
 	}
 }
+@media screen and (max-width:834px){
+	.flex .recipe{
+		width: 100%;
+	}
+}
